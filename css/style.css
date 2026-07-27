@@ -446,11 +446,12 @@ h1, h2, h3, h4 {
 }
 
 .hero-name {
-  font-size: clamp(3.4rem, 13vw, 9.5rem);
-  line-height: 0.92;
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: clamp(2.3rem, 9.5vw, 7rem);
+  line-height: 0.95;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  max-width: 16ch;
 }
 
 .hero-roles {
