@@ -194,8 +194,6 @@
 
     lastFocusedEl = document.activeElement;
 
-    lightbox.classList.toggle("is-vintage", galleryName === "gallery");
-
     showImageAt(index === -1 ? 0 : index);
 
     lightbox.classList.add("is-open");
