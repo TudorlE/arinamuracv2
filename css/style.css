@@ -770,9 +770,7 @@ h1, h2, h3, h4 {
 
 .credit-card {
   display: grid;
-  gap: 0.5rem;
-  padding: clamp(1.5rem, 3vw, 2.25rem);
-  border: 1px solid var(--c-line);
+  gap: 0.6rem;
   margin-bottom: clamp(2rem, 4vw, 3rem);
   max-width: 640px;
 }
@@ -783,21 +781,9 @@ h1, h2, h3, h4 {
   font-weight: 600;
 }
 
-.credit-year {
-  color: var(--c-grey);
-  font-weight: 400;
-}
-
 .credit-row {
-  display: flex;
-  gap: 0.5em;
-  font-size: 0.95rem;
+  font-size: clamp(1rem, 1.3vw, 1.1rem);
   color: var(--c-off-white);
-}
-
-.credit-row .credit-key {
-  color: var(--c-grey);
-  min-width: 6.5em;
 }
 
 .credit-actions {
