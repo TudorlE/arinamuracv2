@@ -1022,24 +1022,6 @@ h1, h2, h3, h4 {
   overflow: hidden;
 }
 
-.modeling-watermark {
-  position: absolute;
-  top: clamp(-2rem, -4vw, -1rem);
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 0;
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: clamp(5rem, 18vw, 14rem);
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(247, 245, 242, 0.07);
-  white-space: nowrap;
-  pointer-events: none;
-  user-select: none;
-}
-
 .modeling-section .section-inner {
   position: relative;
   z-index: 1;
