@@ -697,7 +697,7 @@ h1, h2, h3, h4 {
 
 .lang-name {
   font-family: var(--font-body);
-  font-size: clamp(1rem, 1.3vw, 1.1rem);
+  font-size: clamp(1.5rem, 2.6vw, 2.1rem);
   font-weight: 400;
   color: var(--c-off-white);
 }
@@ -741,7 +741,7 @@ h1, h2, h3, h4 {
 
 .skills-list {
   max-width: 900px;
-  font-size: clamp(1rem, 1.3vw, 1.1rem);
+  font-size: clamp(1.3rem, 2.2vw, 1.75rem);
   color: var(--c-off-white);
   line-height: 1.8;
 }
