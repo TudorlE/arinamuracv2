@@ -402,7 +402,8 @@ h1, h2, h3, h4 {
   position: relative;
   min-height: 100svh;
   display: grid;
-  align-items: end;
+  align-items: center;
+  justify-items: center;
   overflow: hidden;
 }
 
@@ -434,7 +435,9 @@ h1, h2, h3, h4 {
   width: 100%;
   padding: calc(var(--nav-height) + 2rem) clamp(1.5rem, 6vw, 4.5rem) clamp(3rem, 7vw, 5rem);
   display: grid;
+  justify-items: center;
   gap: 1.75rem;
+  text-align: center;
 }
 
 .hero-kicker {
@@ -447,16 +450,17 @@ h1, h2, h3, h4 {
 
 .hero-name {
   font-family: var(--font-body);
-  font-weight: 800;
-  font-size: clamp(2.3rem, 9.5vw, 7rem);
-  line-height: 0.95;
-  letter-spacing: -0.01em;
+  font-weight: 600;
+  font-size: clamp(1.9rem, 6vw, 3.8rem);
+  line-height: 1.05;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 
 .hero-roles {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.5em 1.4em;
   font-size: clamp(0.95rem, 1.4vw, 1.15rem);
   color: var(--c-off-white);
@@ -489,6 +493,7 @@ h1, h2, h3, h4 {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   margin-top: 0.5rem;
 }
