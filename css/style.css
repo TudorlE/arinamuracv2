@@ -552,18 +552,6 @@ h1, h2, h3, h4 {
   object-fit: contain;
 }
 
-.portrait-caption {
-  position: absolute;
-  left: clamp(1.5rem, 5vw, 3.5rem);
-  bottom: clamp(1.25rem, 3vw, 2.25rem);
-  z-index: 2;
-  color: var(--c-white);
-  font-size: 0.78rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.6);
-}
-
 /* ==========================================================================
    About — asymmetric editorial split
    ========================================================================== */
