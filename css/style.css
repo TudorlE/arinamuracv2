@@ -1090,6 +1090,31 @@ h1, h2, h3, h4 {
   border-top: 1px solid var(--c-line);
 }
 
+.closing-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.closing-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 25%;
+}
+
+.closing-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.75) 0%, rgba(10, 10, 10, 0.55) 45%, rgba(10, 10, 10, 0.85) 100%);
+}
+
+.closing-content {
+  position: relative;
+  z-index: 1;
+}
+
 .closing-name {
   font-size: clamp(3rem, 12vw, 8rem);
   text-transform: uppercase;
