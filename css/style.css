@@ -1000,9 +1000,6 @@ h1, h2, h3, h4 {
     opacity: 1;
     transform: translateY(0);
   }
-  .modeling-tile.is-feature::before {
-    opacity: 1;
-  }
 }
 
 .empty-note {
@@ -1011,102 +1008,6 @@ h1, h2, h3, h4 {
   border-left: 2px solid var(--c-line);
   padding-left: 1rem;
   max-width: 50ch;
-}
-
-/* ==========================================================================
-   Modeling — editorial masonry collage
-   ========================================================================== */
-
-.modeling-section {
-  position: relative;
-  overflow: hidden;
-}
-
-.modeling-section .section-inner {
-  position: relative;
-  z-index: 1;
-}
-
-.modeling-grid {
-  column-count: 2;
-  column-gap: clamp(0.7rem, 1.6vw, 1.1rem);
-}
-
-@media (min-width: 640px) {
-  .modeling-grid {
-    column-count: 3;
-  }
-}
-
-@media (min-width: 1100px) {
-  .modeling-grid {
-    column-count: 4;
-  }
-}
-
-.modeling-tile {
-  position: relative;
-  aspect-ratio: 3 / 4;
-  width: 100%;
-  break-inside: avoid;
-  margin-bottom: clamp(0.7rem, 1.6vw, 1.1rem);
-}
-
-.modeling-tile:nth-child(4n + 2) {
-  margin-top: clamp(1.4rem, 4vw, 2.6rem);
-}
-
-.modeling-tile:nth-child(4n + 4) {
-  margin-top: clamp(0.8rem, 2vw, 1.4rem);
-}
-
-/* spotlight tiles break the column flow for a full-width editorial pause */
-.modeling-tile.is-feature {
-  column-span: all;
-  aspect-ratio: 16 / 9;
-  margin-top: clamp(1rem, 2.5vw, 1.75rem);
-  margin-bottom: clamp(1.4rem, 3vw, 2.25rem);
-}
-
-.modeling-tile.is-feature .media-tile-label {
-  font-family: var(--font-display);
-  font-size: clamp(1.1rem, 2.2vw, 1.6rem);
-  font-weight: 600;
-  text-transform: none;
-  letter-spacing: 0.01em;
-  left: clamp(1.25rem, 3vw, 2rem);
-  right: clamp(1.25rem, 3vw, 2rem);
-  bottom: clamp(1.1rem, 2.5vw, 1.6rem);
-}
-
-.modeling-tile.is-feature::before {
-  content: "";
-  position: absolute;
-  inset: 10px;
-  z-index: 1;
-  border: 1px solid rgba(201, 169, 106, 0.55);
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.5s var(--ease);
-}
-
-.modeling-tile.is-feature:hover::before,
-.modeling-tile.is-feature:focus-visible::before {
-  opacity: 1;
-}
-
-.modeling-tile:hover,
-.modeling-tile:focus-visible {
-  box-shadow: 0 22px 44px rgba(0, 0, 0, 0.5);
-}
-
-.modeling-tile img {
-  transition: transform 0.9s var(--ease), filter 0.7s var(--ease);
-}
-
-.modeling-tile:hover img,
-.modeling-tile:focus-visible img {
-  transform: scale(1.08);
 }
 
 /* ==========================================================================
