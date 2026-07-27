@@ -532,21 +532,18 @@ h1, h2, h3, h4 {
 .portrait-frame {
   position: relative;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 
-@media (min-width: 700px) {
-  .portrait-frame {
-    aspect-ratio: 21 / 9;
-  }
-}
-
 .portrait-frame img {
-  width: 100%;
+  width: auto;
   height: 100%;
-  object-fit: cover;
-  object-position: 50% 18%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .portrait-caption {
