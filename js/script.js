@@ -157,7 +157,6 @@
      ---------------------------------------------------------------------- */
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightboxImg");
-  const lightboxCaption = document.getElementById("lightboxCaption");
   const lightboxClose = document.getElementById("lightboxClose");
   const lightboxPrev = document.getElementById("lightboxPrev");
   const lightboxNext = document.getElementById("lightboxNext");
@@ -183,7 +182,6 @@
 
     lightboxImg.src = full;
     lightboxImg.alt = altText || caption;
-    lightboxCaption.textContent = caption;
   };
 
   const openLightbox = (tile) => {
